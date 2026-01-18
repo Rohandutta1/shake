@@ -6,7 +6,7 @@ export default function IntroSection() {
 
   return (
     <section className="w-full bg-white">
-      <div className="w-full px-10 py-14">
+      <div className="w-full px-4 py-14 sm:px-10">
         <div className="flex items-start justify-between gap-10">
           <div className="text-[12px] font-semibold text-black/50">Our philosophy</div>
           <div className="max-w-[760px] text-right text-[56px] font-black uppercase leading-[1.05] tracking-tight text-[#1f4f3f]">
@@ -47,10 +47,10 @@ export default function IntroSection() {
               )}
             </button>
 
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 sm:bottom-10">
               <button
                 type="button"
-                className="rounded-full bg-[#ffd900] px-10 py-5 text-[22px] font-black uppercase tracking-tight text-[#1f4f3f] ring-8 ring-white"
+                className="rounded-full bg-[#ffd900] px-5 py-3 text-[14px] font-black uppercase tracking-tight text-[#1f4f3f] ring-4 ring-white sm:px-10 sm:py-5 sm:text-[22px] sm:ring-8"
               >
                 WATCH OUR INTRO
               </button>

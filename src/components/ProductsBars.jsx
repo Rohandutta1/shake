@@ -9,7 +9,7 @@ export default function ProductsBars() {
 
   return (
     <section className="w-full pb-24">
-      <div className="w-full rounded-none bg-[#1f4f3f] px-10 py-10 text-white shadow-soft">
+      <div className="w-full rounded-none bg-[#1f4f3f] px-4 py-10 text-white shadow-soft sm:px-10">
         <div className="flex items-start justify-between gap-10">
           <div className="text-[56px] font-black uppercase tracking-tight text-white">OUR PRODUCTS</div>
           <div className="max-w-[340px] text-right text-[11px] font-semibold leading-snug text-white/70">
@@ -19,12 +19,12 @@ export default function ProductsBars() {
           </div>
         </div>
 
-        <div className="relative mt-12 space-y-6">
+        <div className="relative mt-12 space-y-6 px-4 sm:px-0">
           {rows.map((r) => (
             <div
               key={r.label}
               className={classNames(
-                'relative flex items-center justify-between rounded-[999px] px-10 py-10',
+                'relative flex items-center justify-between rounded-[999px] px-4 py-10 sm:px-10',
                 r.highlighted ? 'bg-[#ffd900] text-shake-ink' : 'bg-[#234f41] text-white',
               )}
             >

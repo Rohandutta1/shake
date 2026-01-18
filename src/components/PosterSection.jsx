@@ -6,7 +6,7 @@ export default function PosterSection() {
   return (
     <div className="w-full">
       <div className="w-full rounded-b-[56px] rounded-t-none bg-[#1f4f3f] shadow-soft ring-1 ring-black/20">
-        <div className="relative px-10 pb-8">
+        <div className="relative px-0 pb-8 sm:px-10">
           <div className="relative overflow-hidden rounded-b-[46px] rounded-t-none bg-[#1f4f3f]">
             <div className="relative mt-0">
               <div className="relative w-full">
