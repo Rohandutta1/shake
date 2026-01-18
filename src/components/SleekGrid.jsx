@@ -1,0 +1,64 @@
+import { classNames } from '../utils/classNames'
+
+import proteinHero from '../assets/protein_shake_hero.png'
+import proteinChocolate from '../assets/protein_shake_chocolate.png'
+import proteinStrawberry from '../assets/protein_shake_strawberry.png'
+import featureLifestyle from '../assets/feature_lifestyle_shake.png'
+
+export default function SleekGrid() {
+  const cards = [
+    { src: proteinHero, bg: 'bg-[#e9eef0]' },
+    { src: proteinChocolate, bg: 'bg-[#e6eaee]' },
+    { src: proteinStrawberry, bg: 'bg-[#ececec]' },
+    { src: featureLifestyle, bg: 'bg-[#efe6e6]' },
+  ]
+
+  return (
+    <section className="w-full bg-[#f3f1ea]">
+      <div className="w-full px-6 py-10 sm:px-10 sm:py-12">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+          <div className="max-w-[520px]">
+            <div className="text-[44px] font-black uppercase leading-[0.9] tracking-tight text-[#1f4f3f] sm:text-[56px] lg:text-[64px]">
+              BE SLEEK
+              <span className="relative inline-block">
+                <span className="absolute -right-5 top-2 h-10 w-10 rounded-full bg-[#ffd900] sm:-right-6 sm:top-3" />
+                <span className="relative">K</span>
+              </span>
+              <br />
+              BE CONFIDENT
+            </div>
+          </div>
+
+          <div className="max-w-[320px] text-left text-[11px] font-semibold leading-snug text-black/45 sm:pt-2 sm:text-right">
+            Spring-summer 2026 ready-to-mix
+            <br />
+            collection shines with an aura of intrigue,
+            <br />
+            capturing a defiant elegance.
+          </div>
+        </div>
+
+        <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {cards.map((card, idx) => (
+            <div
+              key={idx}
+              className={classNames(
+                'relative overflow-hidden rounded-[40px] ring-1 ring-black/10',
+                'h-[260px] sm:h-[320px] lg:h-[340px]',
+                card.bg,
+              )}
+            >
+              <img
+                src={card.src}
+                alt="Shake product"
+                className="h-full w-full object-cover object-center"
+                loading="lazy"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
