@@ -5,7 +5,9 @@ import PosterSection from './components/PosterSection.jsx'
 import SleekGrid from './components/SleekGrid.jsx'
 import ProductsBars from './components/ProductsBars.jsx'
 import IntroSection from './components/IntroSection.jsx'
+import BrandStorySection from './components/BrandStorySection.jsx'
 import Footer from './components/Footer.jsx'
+import ContactUs from './components/ContactUs.jsx'
 import Login from './pages/Login.jsx'
 import Signup from './pages/Signup.jsx'
 import Profile from './pages/Profile.jsx'
@@ -17,9 +19,11 @@ function Home() {
     <>
       <TopNav />
       <PosterSection />
+      <BrandStorySection />
       <SleekGrid />
       <ProductsBars />
       <IntroSection />
+      <ContactUs />
       <Footer />
     </>
   )

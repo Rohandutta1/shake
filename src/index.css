@@ -47,7 +47,11 @@ body {
 
 
   .shake-marquee {
-    animation: shakeMarquee 10s linear infinite;
+    animation: shakeMarquee 80s linear infinite;
+  }
+
+  .shake-marquee-reverse {
+    animation: shakeMarqueeReverse 80s linear infinite;
   }
 }
 
@@ -55,7 +59,18 @@ body {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes shakeMarqueeReverse {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }

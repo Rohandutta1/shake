@@ -53,12 +53,12 @@ export default function PosterSection() {
                     <img
                       src={heroImage}
                       alt="Shake hero"
-                      className="max-h-full max-w-full object-contain drop-shadow-[0_24px_30px_rgba(0,0,0,0.25)]"
+                    //className="max-h-full max-w-full object-contain drop-shadow-[0_24px_30px_rgba(0,0,0,0.25)]"
                     />
                   </div>
 
                   <div className="absolute bottom-6 right-6 z-20 w-[240px] text-[10px] font-semibold leading-snug text-shake-ink/70 sm:bottom-8 sm:right-8 sm:w-[260px]">
-                    <div className="mb-2 h-10 w-full rounded-sm bg-black/20" />
+                    {/* <div className="mb-2 h-10 w-full rounded-sm bg-black/20" /> */}
                     Spring-summer 2026 ready-to-mix
                     <br />
                     collection fuels your routine.

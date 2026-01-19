@@ -5,7 +5,7 @@ export default function DiscountMarquee() {
   return (
     <div className="mt-5 rounded-[46px] bg-[#ffd900] px-0 py-5 shadow-soft ring-4 ring-shake-ink/60 sm:px-4">
       <div className="overflow-hidden">
-        <div className="flex min-w-[200%] items-center gap-10 whitespace-nowrap shake-marquee">
+        <div className="flex min-w-[200%] items-center gap-10 whitespace-nowrap shake-marquee-reverse">
           {repeated.map((t, idx) => (
             <div key={idx} className="flex items-center gap-10">
               <span className="text-[34px] font-black uppercase tracking-tight text-shake-ink">{t}</span>

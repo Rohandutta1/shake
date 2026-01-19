@@ -6,7 +6,7 @@ export default function IntroSection() {
 
   return (
     <section className="w-full bg-white">
-      <div className="w-full px-4 py-14 sm:px-10">
+      <div className="w-full px-4 py-10 sm:px-10">
         <div className="flex items-start justify-between gap-10">
           <div className="text-[12px] font-semibold text-black/50">Our philosophy</div>
           <div className="max-w-[760px] text-right text-[56px] font-black uppercase leading-[1.05] tracking-tight text-[#1f4f3f]">

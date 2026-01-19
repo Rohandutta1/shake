@@ -229,7 +229,7 @@ export default function TopNav() {
                     </Link>
                     <Link
                       to="/signup"
-                      className="block w-full text-left px-3 py-2 text-[13px] font-semibold text-white/80 hover:text-white hover:bg-white/10 rounded transition bg-[#ffd900]/20 text-[#ffd900]"
+                      className="block w-full text-left px-3 py-2 text-[13px] font-semibold text-white/80 hover:text-white hover:bg-white/10 rounded transition"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Sign Up
